@@ -1,3 +1,7 @@
+//Adriana Tapia Ramìrez
+//28 de octubre de 1997
+//p(inicial)=28
+//Resultado p=53
 #include <iostream>
 using namespace std;
 
@@ -29,19 +33,20 @@ int main (){
 
  while(isPrime(p)==1){
    cout << "ciclo isPrime, S= " << S << ",p= " << p << endl;
-   cout << " no es primo  " << p << endl;
-      if((p%2)==0)
-	p=p+1;
-	p=p+2;
+   cout << " no es primo  " << p << endl; 
+      if((p%2)==0) p=p+1;
+	if((p%2)!=0) p=p+2;
       cout << "final ciclo isPrime, S= " << S << ",p= " << p << endl;
     }  
-    
-    S=S-p;
-    p=p+2;
+     S=S-p;
+if((p%2)==0) p=p+1; 
+if((p%2)!=0) p=p+2;
     cout << "final ciclo p<S, S= " << S << ",p= " << p << endl;
    }
 
   S=S-1;
+if((p%2)==0) p=p+1; 
+if((p%2)!=0) p=p+2;
   cout << "final ciclo S!=0, S= " << S << ",p= " << p << endl;
  }
   
