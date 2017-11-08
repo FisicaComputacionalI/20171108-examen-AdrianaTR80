@@ -5,8 +5,8 @@
  int main (){
  	float v=0, d=0, t=0;
  	
- 	cout<<"Escriba la distancia recorrida en metros: "<<endl; cin>>d;
- 	cout<<"Escriba el tiempo que se tardo en recorre esa distancia (en seg): "; cin>>t;
+ 	cout<<"Escriba la distancia(en m):"<<endl; cin>>d;
+ 	cout<<"Escriba el tiempo en el que recorriò esa distancia (en seg):"; cin>>t;
  		 	
  	v= d/t;
  	 	
